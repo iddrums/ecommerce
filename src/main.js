@@ -16,7 +16,7 @@ Vue.use(VueResource)
 Vue.use(Vuelidate)
 
 axios.defaults.baseURL = 'https://vuejs-mapsie-store.firebaseio.com'
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 axios.defaults.headers.get.Accepts = 'application/json'
 
