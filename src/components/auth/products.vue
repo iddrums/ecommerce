@@ -4,7 +4,7 @@
     <v-toolbar color="primary" dark>
       <v-toolbar-title>Products In Stock</v-toolbar-title>
     </v-toolbar>
-     <div class="text-center">
+     <div class="text-center mt-2">
         <v-btn icon color="deep-orange">
           <v-icon>mdi-thumb-up</v-icon>
         </v-btn>
