@@ -6,7 +6,7 @@
           <v-toolbar color="primary" dark>
             <v-toolbar-title>Create Product Form</v-toolbar-title>
           </v-toolbar>
-          <v-form class="px-4" ref="form" v-model="valid">
+          <v-form class="px-4" ref="form">
             <v-text-field
               v-model="title"
               :counter="15"
@@ -19,7 +19,7 @@
             ></v-text-field>
             <v-text-field
               v-model="description"
-              :counter="100"
+              :counter="1000"
               prepend-icon
               :rules="descriptionRules"
               name="description"
@@ -76,7 +76,7 @@ export default {
       description: '',
       descriptionRules: [
         v => !!v || 'Description is required',
-        v => (v && v.length <= 100) || 'Description must have less than 100 characters'
+        v => (v && v.length <= 1000) || 'Description must have less than 1000 characters'
       ],
       price: '',
       priceRules: [

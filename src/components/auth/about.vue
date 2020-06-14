@@ -53,22 +53,22 @@ export default {
     return {
       items: [
         {
-          src: 'img/icons/kay.jpeg'
+          src: 'img/icons/e6.jpeg'
         },
         {
-          src: 'img/icons/bey.jpeg'
+          src: 'img/icons/e5.jpeg'
         },
         {
-          src: 'img/icons/kim.jpeg'
+          src: 'img/icons/e4.jpeg'
         },
         {
-          src: 'img/icons/bey1.jpeg'
+          src: 'img/icons/e3.jpeg'
         },
         {
-          src: 'img/icons/kay1.jpeg'
+          src: 'img/icons/e2.jpeg'
         },
         {
-          src: 'img/icons/bey2.jpeg'
+          src: 'img/icons/e1.jpeg'
         }
       ]
     }
