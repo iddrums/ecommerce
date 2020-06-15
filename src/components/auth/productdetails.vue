@@ -29,6 +29,7 @@
           </v-btn>
         </v-card-actions>
       </v-card>
+
     </v-dialog>
     <div class="text-center pt-0 d-flex">
       <div class="part-1">
