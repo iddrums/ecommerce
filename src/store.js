@@ -55,7 +55,6 @@ export default new Vuex.Store({
           localStorage.setItem('token', res.data.idToken)
           localStorage.setItem('userId', res.data.localId)
           localStorage.setItem('expirationDate', expirationDate)
-          dispatch('storeUser', authData)
           dispatch('setLogoutTimer', res.data.expiresIn)
           router.push('products')
         })
@@ -160,14 +159,6 @@ export default new Vuex.Store({
       localStorage.removeItem('token')
       localStorage.removeItem('userId')
       router.replace('/login')
-    },
-    storeUser ({ commit, state }, userData) {
-      if (!state.idToken) {
-        return
-      }
-      globalAxios.post('/users.json' + '?auth=' + state.idToken, userData)
-        .then(res => console.log(res))
-        .catch(error => console.log(error))
     },
     toCart ({ commit, state }, product) {
       const found = state.cartProducts.find(

@@ -74,7 +74,7 @@ export default {
         {
           title: 'Products',
           to: '/products',
-          auth: false
+          auth: 'either'
         },
         {
           title: 'About',
@@ -84,7 +84,7 @@ export default {
         {
           title: 'Cart',
           to: '/cart',
-          auth: ''
+          auth: 'either'
         },
         {
           title: 'Dashboard',
@@ -100,7 +100,7 @@ export default {
     },
     filteredLinks () {
       return this.links.filter(
-        link => link.auth === this.auth || link.title === 'Cart'
+        link => link.auth === this.auth || link.auth === 'either'
       )
     }
   },
