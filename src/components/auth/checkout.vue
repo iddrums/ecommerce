@@ -28,13 +28,12 @@
               :value="true"
             >The delivery address is the same as the payment address</v-alert>
           </div>
+          <v-btn color="primary" lager style="float: right;">Complete Order</v-btn>
         </v-flex>
       </v-layout>
     </form>
-
     <hr />
 
-    <v-btn color="success" lager style="float: right;">Complete Order</v-btn>
   </v-container>
 </template>
 
