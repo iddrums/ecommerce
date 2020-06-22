@@ -164,7 +164,6 @@ export default new Vuex.Store({
       const found = state.cartProducts.find(
         (item) => item.id === product.id
       )
-      console.log(product, found, 'he')
 
       if (found) {
         found.quantity++

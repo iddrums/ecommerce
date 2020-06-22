@@ -31,32 +31,32 @@
                     </v-card-actions>
                   </v-card>
         </v-dialog>
-          <v-col xs="12" sm="6" md="4" v-for="card in allProducts" :key="card.title">
+          <v-col xs="12" sm="6" md="4" v-for="product in allProducts" :key="product.title">
             <v-card>
-              <router-link :to="`/product/${card.id}`">
+              <router-link :to="`/product/${product.id}`">
                 <v-img
-                  :src="card.image"
+                  :src="product.image"
                   class="white--text align-end"
                   gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                   height="200px"
                 ></v-img>
               </router-link>
-              <v-card-title v-text="card.title"></v-card-title>
+              <v-card-title v-text="product.title"></v-card-title>
               <v-card-subtitle class="pb-0">
                 <strong>Unique Product</strong>
               </v-card-subtitle>
               <v-card-text class="text--primary">
                 <div>Celebrity wears</div>
-                <h3>₦{{ card.price }}</h3>
+                <h3>₦{{ product.price }}</h3>
                 <div>Celebrity wears, Events and Seminars</div>
               </v-card-text>
               <v-card-actions>
-                <v-btn :to="`/product/${card.id}`" color="orange" text
+                <v-btn :to="`/product/${product.id}`" color="orange" text
                   >More Info</v-btn
                 >
 
                 <v-btn
-                        @click="addToCart(card)"
+                        @click="addToCart(product)"
                         color="orange"
                         text
                       >
@@ -77,8 +77,7 @@ export default {
   data () {
     return {
       open: false,
-      products: [],
-      product: {}
+      products: []
     }
   },
   computed: {
@@ -93,8 +92,8 @@ export default {
     this.$store.dispatch('fetchAllProducts')
   },
   methods: {
-    addToCart (card) {
-      this.$store.dispatch('toCart', card)
+    addToCart (product) {
+      this.$store.dispatch('toCart', product)
       this.open = true
     }
   }

@@ -20,7 +20,7 @@
         <v-sheet :item="items[i]" height="100%" width="100%">
           <v-row class="fill-height" align="center" justify="center">
             <div class="display-3">
-              <img :src="item.src" style="width:1000px;height:500px;" />
+              <img :src="item.src" style="width:1000px; height:500px;" />
             </div>
           </v-row>
         </v-sheet>

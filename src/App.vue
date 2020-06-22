@@ -25,9 +25,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
   body, html {
     margin: 0;
     /* font-family: Arial, Helvetica, sans-serif; */
+  }
+
+  img {
+    object-fit: cover;
   }
 </style>
