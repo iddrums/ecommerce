@@ -9,7 +9,7 @@
           <v-form class="px-4" ref="form" v-model="valid">
             <v-text-field
               v-model="product.title"
-               :counter="15"
+              :counter="15"
               prepend-icon
               :rules="titleRules"
               name="title"

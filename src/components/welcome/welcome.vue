@@ -32,7 +32,7 @@
            <v-col xs="12" sm="6" md="4" v-for="card in allProducts.slice(-3)" :key="card.title">
            <router-link :to="`/product/${card.id}`">
                 <v-img
-                :src="card.image"
+                  :src="card.image"
                   class="white--text align-end"
                   gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                   height="200px"

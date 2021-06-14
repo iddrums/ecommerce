@@ -49,7 +49,7 @@
             </v-text-field>
             <v-text-field
               v-model="confirmPassword"
-               :counter="15"
+              :counter="15"
               prepend-icon
               :rules="confirmPasswordRules"
               name="confirmpassword"
